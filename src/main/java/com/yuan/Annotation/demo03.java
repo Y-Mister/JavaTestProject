@@ -14,7 +14,7 @@ public class demo03 {
         try {
             //通过反射获取类的全部信息
             Class relStudent = Class.forName("com.yuan.Annotation.RefStudent");
-            //获得该类的所有注解
+            //获得该类上的所有注解
             Annotation[] annotations = relStudent.getDeclaredAnnotations();
             for (Annotation annotation:annotations){
                 System.out.println(annotation);
