@@ -22,7 +22,6 @@ public class SumOfTwoNums {
     public static int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         boolean flag = false;
-        //Arrays.sort(temp);
 
         for (int i=0;i<nums.length-1;i++){
             if (!flag) {
