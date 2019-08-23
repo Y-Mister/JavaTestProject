@@ -45,4 +45,6 @@ public class No4 {
         }
         return midNum;
     }
+
+
 }
