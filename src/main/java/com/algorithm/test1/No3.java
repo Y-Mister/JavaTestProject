@@ -32,9 +32,10 @@ import java.util.Map;
 public class No3 {
 
          public static void main(String[] args) {
-            String s = "abcabcbb";
-            int len = lengthOfLongestSubstring2(s);
-            System.out.println(len);
+            String s = "bbbbbb";
+            int len1 = lengthOfLongestSubstring2(s);
+             int len2 = solution(s);
+            System.out.println(len1+"   "+len2);
          }
         /*自己的弱鸡答案*/
          public static int lengthOfLongestSubstring(String s) {
@@ -83,6 +84,26 @@ public class No3 {
             }
             return ans;
          }
+
+
+        public static int solution(String s){
+
+            int start=0,end=0,len=0;
+            char[] array = s.toCharArray();
+            Map<Character,Integer> map = new HashMap<>();
+
+            for (;end<s.length();end++){
+                if (!map.containsKey(array[end])){
+                    map.put(array[end],end+1);
+                }else{
+                    start = map.get(array[end]); //start=Math.max(start,map.get(array[end]))
+                    map.put(array[end],end+1);
+                }
+                len = Math.max(len,end-start+1);
+            }
+
+            return len;
+        }
 
 
     }
