@@ -1,4 +1,4 @@
-package com.yuan.MyTest;
+package com.yuan.ObjectMethodTest;
 
 /**
  * Author:袁航
@@ -26,8 +26,6 @@ public class ObjectMethodTest implements Cloneable{
         obt2.getPerson().setName("BB");
         System.out.println("obt1:" + obt1);
         System.out.println("obt2:"+obt2);
-
-
     }
 
     public Person getPerson() {
