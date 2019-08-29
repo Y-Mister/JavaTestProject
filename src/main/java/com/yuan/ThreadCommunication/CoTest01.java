@@ -64,7 +64,7 @@ class SynContainer{
         }
         buns[count] = steamerbun;
         count++;
-        this.notifyAll();//存在数据，可以通知消费
+        this.notifyAll();//存在数据，可以通知消费者进行消费
     }
     //取出消费
     public synchronized Steamerbun pop()  {
