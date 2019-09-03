@@ -32,12 +32,9 @@ public class No14 {
                     break;
                 }
 
-
                 if (end>=strs[i].length()||cr != strs[i].charAt(end)){
                     flag=false;
                 }
-                /*if (flag==false)
-                    break;*/
             }
 
             if (flag==false){
